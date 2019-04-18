@@ -5,8 +5,13 @@
 * [CSS ](base/#Css)
     * [- 了解css ](base/#Css)
     * [- css的发展史 ](base/#css的发展史)
+* [shape-outside ](shape-outside/#shape-outside)
+* [text-decoration ](text-decoration/#text-decoration)
+    * [- properties ](text-decoration/#properties)
+    * [- text-decoration-skip ](text-decoration/#text-decoration-skip)
+    * [- text-decoration-style ](text-decoration/#text-decoration-style)
 * [background ](background/#background)
-    * [- 属性 ](background/#属性)
+    * [- properties ](background/#properties)
 * [display ](display/#display)
     * [- block ](display/#display)
     * [- inline-block ](display/#inline-block)
@@ -16,8 +21,8 @@
     * [- table ](display/#table)
     * [- table-cell ](display/#table-cell)
     * [- table-caption ](display/#table-caption)
-* [pseudo-classes ](pseudo-classes/#first-line)
-    * [-:first-line ](pseudo-classes/#first-line)
+* [pseudo-element ](pseudo-element/#first-line)
+    * [- ::first-line ](pseudo-element/#first-line)
 
 <!-- * [- 链接里面套链接](base/#链接里面套链接) -->
 <!-- * [- color](base/#color) -->

@@ -1,9 +1,23 @@
 
 ## background
 
-`background` 的几个属性：
+`background` 是 `css` 的简写属性。用于一次性定义各种背景（`color`,`position`,`image`,`size`等等）属性。 
 
-|属性|值|
+```copy
+<style>
+    div{
+        width:200px;
+        height:200px;
+        background:red url('https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg') 0 0 / 219px 48px no-repeat;
+    }
+</style>
+
+<div></div>
+```
+
+### properties
+
+|properties|value|
 |---|---|
 |background-color|`rgba()`,`rgb()`,`hsla()`,`#fff`,`white`,`transparent`,`currentColor`,<br>`inherit`,`initial`,`unset`,`none`,`*gradient`|
 |background-image|`url`,`none`,`inherit`|
