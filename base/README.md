@@ -1,57 +1,54 @@
-# Vuejs
+# Css
 
-本文是基于<svg class="iconTag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="70" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h31v20H0z"/><path fill="#97ca00" d="M31 0h39v20H31z"/><path fill="url(#b)" d="M0 0h70v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"> <text x="165" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="210">vue</text><text x="165" y="140" transform="scale(.1)" textLength="210">vue</text><text x="495" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="290">2.9.6</text><text x="495" y="140" transform="scale(.1)" textLength="290">2.9.6</text></g> </svg>版本所总结的知识笔记，主要帮助团队成员快速理解技术关键词汇与重点难点。各关键点会在后续独立成一篇研究课题。
+`css`： Cascading Style Sheets -- 层叠样式表。<br>
 
-## webpack的使用
-`webpack` 有一个比较大的用处就是将浏览器不能直接识别的语言转换成浏览器能够识别的语言。
+!>为啥叫 `层叠样式表`？<br>
+我大概的理解就是：当样式作用在同一个目标上时，样式可以通过 `叠加` ， `覆盖` 来进行修饰，子元素可以通过 `继承` 来表现。<br>
 
-语法：
-```copy
-webpack index.js builde.js          //将 `index.js` 打包成 `build.js`
-```
+`css` 的出现，可以让我们的结构和表现分离，可以更灵活的修饰页面。
 
-## commonjs
-`commonjs` 的存在主要是为了弥补<b>js没有模块化</b>的概念。
+我们现在运用到的 `css` 为 `css3`，但是未来不会有 `css4` 或者 `css5` 的出现（至少现在没有听到）。<br>
+如今的 `css` 已经被拆分成了独立的模块进行单独的更新。所以如果要更新的话，只是对某个模块的 `css` 进行升级。<br>
 
-在 `commonjs` 的规范中：
-* 一个文件就是一个模块，拥有单独的作用域，不会污染全局作用域；
-* 普通方式定义的变量、函数、对象都属于这个模块内；
-* 模块通过 `require` 的方式加载； 
-* 模块可以通过 `exports` 和 `module.exports` 来暴露模块中的内容；
+## css的发展史
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="150" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h77v20H0z"/><path fill="#97ca00" d="M77 0h73v20H77z"/><path fill="url(#b)" d="M0 0h150v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"> <text x="395" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="670">CSS Level 1</text><text x="395" y="140" transform="scale(.1)" textLength="670">CSS Level 1</text><text x="1125" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="630">1996年12月</text><text x="1125" y="140" transform="scale(.1)" textLength="630">1996年12月</text></g> </svg>
+*   字体属性
+*   文字属性
+*   文本，表格，图像等的对齐方式
+*   文字和背景的颜色
+*   单词，字母和线条的间距
+*   边距，边框，填充和定位
+*   伪类
+*   级联
+*   盒子特性
+<br>
+<br>
 
-## 各种各样的export
-`export`
-`export default`
-`exports`
-`modules.exprots`
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="144" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h77v20H0z"/><path fill="#fe7d37" d="M77 0h67v20H77z"/><path fill="url(#b)" d="M0 0h144v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"> <text x="395" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="670">CSS Level 2</text><text x="395" y="140" transform="scale(.1)" textLength="670">CSS Level 2</text><text x="1095" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="570">1998年5月</text><text x="1095" y="140" transform="scale(.1)" textLength="570">1998年5月</text></g> </svg>
+*   z-index
+*   媒体类型
+*   双向文本
+*   绝对，相对和固定的定位
+*   支持听觉样式表
+<br>
+<br>
 
-`export` 是 `nodejs` 里面模块化的概念。
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="148" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h77v20H0z"/><path fill="#007ec6" d="M77 0h71v20H77z"/><path fill="url(#b)" d="M0 0h148v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"> <text x="395" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="670">CSS Level 3</text><text x="395" y="140" transform="scale(.1)" textLength="670">CSS Level 3</text><text x="1115" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="610">2011/2012</text><text x="1115" y="140" transform="scale(.1)" textLength="610">2011/2012</text></g> </svg>
+*   颜色 L3
+*   选择器 L3
+*   选择器 L4
+*   变形
+*   计算
+*   媒体查询
+*   过渡
+*   动画
+*   网格布局
+*   遮罩
+*   弹性布局
+*   css 语法
+*   多列布局
+*   css属性
 
-## sass的使用
-要使用 `sass` 需要安装一下依赖才可以：
-* node-sass
-* sass-loader
-
-```copy
-npm install node-sass sass-loader -D
-```
-
-#### 内部sass
-我们可以直接在 `vue` 的组件里面书写 `sass`。
-
-```copy
-<style lang="scss">             //要设置 `lang="scss"`
-    $bg:blue;
-    body{
-        background:$bg;
-    }
-</style>
-```
+> 参考地址：@victorv http://www.css-class.com/a-brief-history-of-css/   
 
 
-#### 外部sass
-```copy
-<style lang="scss">             //要设置 `lang="scss"`
-@import "@/assets/scss/index.scss"
-</style>
-```
