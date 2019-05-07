@@ -807,7 +807,7 @@ body {
     color: #858585;
     margin: 2em 0;
     padding-left: 20px;
-    background: 
+    background:
 }
 
 .markdown-section blockquote p {
@@ -834,6 +834,7 @@ body {
     padding: 3px 5px;
     white-space: pre-wrap;
 }
+
 /* 
 .markdown-section code{
     background-color: #42b983;
@@ -1065,7 +1066,22 @@ pre:after {
 
 .iconTag {
     display: inline-block;
-    position:relative;
-    top:4px;
+    position: relative;
+    top: 4px;
     margin: 0 10px;
 }
+
+.special-orange {
+    background: #e96900;
+    color: #fff;
+}
+
+.special-orange code{
+    background: inherit;
+    color: inherit;
+    padding: 0 4px;
+}
+
+
+
+
