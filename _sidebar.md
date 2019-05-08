@@ -12,6 +12,7 @@
     * [- text-decoration-style ](text-decoration/#text-decoration-style)
 * [background ](background/#background)
     * [- properties ](background/#properties)
+    * [- background-color ](background/#background-color)
 * [display ](display/#display)
     * [- block ](display/#display)
     * [- inline-block ](display/#inline-block)
