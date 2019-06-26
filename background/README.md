@@ -73,4 +73,9 @@ background-color:rgb(255,255,255);
 background-color:rgba(255,255,255,1);
 background-color:hsl(50,30%,30%);
 background-color:hsla(50,30%,30%,.6);
+background-color:transparennt;
+background-color:currentColor;
+background-color:inherit;
+background-color:unset;
+background-color:initial;
 ```
