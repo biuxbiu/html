@@ -1,6 +1,6 @@
 <!-- <img class="logo" src="img/logo.png" /> -->
 
-<div class="sideBarTitle">Css</div>
+<div class="sideBarTitle">Cascading Style Sheets</div>
 
 * [CSS ](base/#Css)
     * [- 了解css ](base/#Css)
@@ -12,6 +12,7 @@
     * [- text-decoration-style ](text-decoration/#text-decoration-style)
 * [background ](background/#background)
     * [- properties ](background/#properties)
+    * [- background-color ](background/#background-color)
 * [display ](display/#display)
     * [- block ](display/#display)
     * [- inline-block ](display/#inline-block)
