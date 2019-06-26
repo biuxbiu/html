@@ -7,8 +7,7 @@
 
 `css` 的出现，可以让我们的结构和表现分离，可以更灵活的修饰页面。
 
-我们现在运用到的 `css` 为 `css3`，但是未来不会有 `css4` 或者 `css5` 的出现（至少现在没有听到）。<br>
-如今的 `css` 已经被拆分成了独立的模块进行单独的更新。所以如果要更新的话，只是对某个模块的 `css` 进行升级。<br>
+随着 `css3` 的发布，`css` 被依据功能分解成了模块，所以往后的 `css` 升级更多的是模块的升级，目前还不会有 `css4` 的说法 。<br>
 
 ## css的发展史
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="20"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="150" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path fill="#555" d="M0 0h77v20H0z"/><path fill="#97ca00" d="M77 0h73v20H77z"/><path fill="url(#b)" d="M0 0h150v20H0z"/></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110"> <text x="395" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="670">CSS Level 1</text><text x="395" y="140" transform="scale(.1)" textLength="670">CSS Level 1</text><text x="1125" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="630">1996年12月</text><text x="1125" y="140" transform="scale(.1)" textLength="630">1996年12月</text></g> </svg>
