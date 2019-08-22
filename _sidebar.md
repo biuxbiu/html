@@ -17,6 +17,7 @@
 * [background ](background/#background)
     * [- properties ](background/#properties)
     * [- background-color ](background/#background-color)
+    * [- background-img ](background/#background-img)
 * [display ](display/#display)
     * [- block ](display/#display)
     * [- inline-block ](display/#inline-block)
