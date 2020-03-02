@@ -31,10 +31,10 @@
 |placeholder|text|用户填写提示|
 |readonly|readonly|设置为只读|
 |required|required|定义这个输入框在提交表格的时候必填项，如果有该属性，则该字段是必填或者必选|
-|size|number_of_char|定义的是以像素为单位的输入字段宽度（定义输入框的宽度）|
+|size|number_of_char|定义的是**以像素为单位**的输入字段宽度（定义输入框的宽度）|
 |src|url|定义以提交按钮显示出来的图片的URL|
 |step⭐️⭐️⭐️|number|规定输入字的的合法数字间隔（以这个间隔变化）|
-|type⭐️⭐️⭐️|button<br>checkbox<br>file<br>hidden<br>image<br>password<br>radio<br>reset<br>submit<br>text|按钮<br>多选框<br>文件上传<br>password<br>单选<br>重置按钮<br>提交按钮<br>文字输入框|
+|type⭐️⭐️⭐️|button<br>checkbox<br>file<br>hidden<br>image<br>password<br>radio<br>reset<br>submit<br>text|按钮<br>多选框<br>文件上传<br>隐藏的文本<br>按钮形式的图片<br>密码形式<br>单选<br>重置按钮<br>提交按钮<br>文字输入框|
 |value|value|规定 `<input>` 元素的值|
 |width|pixel<br>%|定义 input 字段的宽度。（适用于 type="image"）|
 

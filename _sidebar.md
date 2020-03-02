@@ -10,7 +10,7 @@
 * [shape-outside ](shape-outside/#shape-outside)
 * [input ](input/#base)
     * [- input的属性和类型 ](input/#input的属性和类型)
-    * [- 改变输入框光标颜色 ](input/#改变输入框光标颜色)
+    * [- 改变输入框的光标颜色 ](input/#改变输入框的光标颜色)
 * [text-decoration ](text-decoration/#text-decoration)
     * [- properties ](text-decoration/#properties)
     * [- text-decoration-skip ](text-decoration/#text-decoration-skip)
