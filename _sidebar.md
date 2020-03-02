@@ -6,10 +6,11 @@
     * [- 了解css ](base/#Css)
     * [- css的发展史 ](base/#css的发展史)
 * [黑科技 ](tips/#tips)
-    * [- 改变输入框光标颜色 ](tips/#改变输入框光标颜色)
+    * [- 改变输入框光标颜色 ](input/#改变输入框光标颜色)
 * [shape-outside ](shape-outside/#shape-outside)
 * [input ](input/#base)
-    * [- text类型 ](input/#text类型)
+    * [- input的属性和类型 ](input/#input的属性和类型)
+    * [- 改变输入框光标颜色 ](input/#改变输入框光标颜色)
 * [text-decoration ](text-decoration/#text-decoration)
     * [- properties ](text-decoration/#properties)
     * [- text-decoration-skip ](text-decoration/#text-decoration-skip)
@@ -18,38 +19,6 @@
     * [- properties ](background/#properties)
     * [- background-color ](background/#background-color)
     * [- background-img ](background/#background-img)
-* [display ](display/#display)
-    * [- block ](display/#display)
-    * [- inline-block ](display/#inline-block)
-    * [- box ](display/#box)
-    * [- flex ](display/#flex)
-    * [- grid ](display/#grid)
-    * [- table ](display/#table)
-    * [- table-cell ](display/#table-cell)
-    * [- table-caption ](display/#table-caption)
 * [pseudo-element ](pseudo-element/#first-line)
     * [- ::first-line ](pseudo-element/#first-line)
-
-<!-- * [- 链接里面套链接](base/#链接里面套链接) -->
-<!-- * [- color](base/#color) -->
-
-
-<div class="MoreWay">biuxbiu Javascript Series</div>
-
-<a class="developerLogo" href="http://javascript-junior.biuxbiu.design/" target="_blank"><img src="img/javascript-junior-level.png"></a>
-
-<div class="MoreWay">More Learning Pathway</div>
-
-<a class="developerLogo" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank"><img src="https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg"></a>
-
-
-<a class="developerLogo" href="https://www.javascript.com/" target="_blank"><img src="img/js-logo.png"></a>
-
-
-<div class="MoreWay">Good FrontEnd Framework</div>
-
-<a class="vueLogo" href="https://cn.vuejs.org/" target="_blank">
-<img src="https://cn.vuejs.org/images/logo.png">
-<p>The Progressive JavaScript Framework</p>
-</a>
 
