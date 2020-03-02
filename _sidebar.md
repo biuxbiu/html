@@ -6,7 +6,7 @@
     * [- 了解css ](base/#Css)
     * [- css的发展史 ](base/#css的发展史)
 * [黑科技 ](tips/#tips)
-    * [- 改变输入框光标颜色 ](input/#改变输入框光标颜色)
+    * [- 改变输入框的光标颜色 ](input/#改变输入框的光标颜色)
 * [shape-outside ](shape-outside/#shape-outside)
 * [input ](input/#base)
     * [- input的属性和类型 ](input/#input的属性和类型)
