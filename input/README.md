@@ -98,8 +98,8 @@
 
 ```html
 <form>
-  Boy: <input type="radio" name="sex" /> Girl:
-  <input type="radio" name="sex" checked />
+  Boy: <input type="radio" name="sex" />
+  Girl:<input type="radio" name="sex" checked />
 </form>
 ```
 
@@ -115,8 +115,8 @@
 
 ```html
 <form>
-  Boy: <input type="radio" name="sex" checked /> Boy:
-  <input type="checkbox" name="sex" checked />
+  Boy: <input type="radio" name="sex" checked /> 
+  Boy: <input type="checkbox" name="sex" checked />
 </form>
 ```
 
