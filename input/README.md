@@ -104,8 +104,7 @@
 ```
 
 <form>
-    Boy: <input type="radio"  name="sex"><Br>
-    Girl: <input type="radio" name="sex" checked>
+    Boy: <input type="radio"  name="sex"> Girl: <input type="radio" name="sex" checked>
 </form>
 
 <br>
