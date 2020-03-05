@@ -12,7 +12,7 @@
 |[alt](input/#alt)|text|定义图像的替代文本|
 |[autocomplete](input/#autocomplete)|on/off|启动或者关闭是否采用自动完成功能|
 |[autofocus](input/#autofocus)|autofocus|表示页面在加载时该元素自动获得焦点|
-|[checked](input/#checked)|checked|表示页面在加载时预先选定该元素|
+|[checked](input/#checked)|checked|表示页面在加载时预先选定该元素（只针对 type="radio" 和 type="checkbox"）|
 |[disabled](input/#disabled)|disabled|表示该元素被禁用|
 |[form](input/#form)|form_id|包含多个表单|
 |[formaction](input/#formaction)|url|表示表单在提交的时候，输入控件的URL地址（针对 type="submit" / type="image" 存在）|
@@ -131,6 +131,49 @@
 <form>
     Boy: <input type="radio"  name="sex"><Br>
     Girl: <input type="radio" name="sex" checked>
+</form>
+
+
+<br>
+<br>
+
+###### checked
+
+```html
+<form>
+    Boy: <input type="radio"  name="sex" checked>
+    Boy: <input type="checkbox"  name="sex" checked>
+</form>
+```
+
+<form>
+    Boy: <input type="radio"  name="sex" checked><br>
+    Boy: <input type="checkbox"  name="sex" checked>
+</form>
+
+
+<br>
+<br>
+
+
+###### disabled
+
+!>表单中被禁用的 `<input>` 元素不会被提交<br>
+disabled 属性不适用于 `<input type="hidden">`
+
+
+```html
+<form>
+    Boy: <input type="radio"  name="sex" disabled>
+    Boy: <input type="checkbox"  name="sex" disabled>
+    Boy: <input type="text"  name="sex" disabled>
+</form>
+```
+
+<form>
+    Boy: <input type="radio"  name="sex" disabled><br>
+    Boy: <input type="checkbox"  name="sex" disabled><br>
+    Boy: <input type="text"  name="sex" disabled>
 </form>
 
 
