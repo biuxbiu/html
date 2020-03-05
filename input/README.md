@@ -20,7 +20,7 @@
 |[formmethod](input/#formmethod)|get/post|提交的方法（针对 type="submit" / type="image" 存在）|
 |[formnovalidate](input/#formnovalidate)|formnovalidate|覆盖表单的 novalidate 属性。如果使用该属性，则提交表单时不进行验证。|
 |[formtarget](input/#formtarget)|_blank<br>_self<br>_parent<br>_top<br>framename|覆盖表单的 target 属性。（适用于 type="submit" 和 type="image"）|
-|[height](input/#height)|px<br>%|设置 `<input>` 的高度|
+|[height](input/#height和width)|px<br>%|设置 `<input>` 的高度|
 |[list](input/#list)|datalist-id|表示输入字段的预选项|
 |[max](input/#max)|number<br>date|与 `min` 相结合使用，设置合法值范围，适用于以下 `<input>` 类型：number, range, date, datetime, datetime-local, month, time 以及 week|
 |[min](input/#max)|number<br>date|与 `max` 相结合使用，设置合法值范围，适用于以下 `<input>` 类型：number, range, date, datetime, datetime-local, month, time 以及 week|
@@ -36,7 +36,7 @@
 |[step](input/#step)|number|规定输入字的的合法数字间隔（以这个间隔变化）|
 |type|[button](input/#button)<br>[checkbox](input/#checkbox)<br>[color](input/#color)<br>[readonly](date/#date)<br>[datetime](input/#datetime)<br>[datetime-local](input/#datetime-local)<br>[email](input/#email)<br>[file](input/#file)<br>[hidden](input/#hidden)<br>[image](input/#image)<br>[month](input/#month)<br>[number](input/#number)<br>[password](input/#password)<br>[radio](input/#radio)<br>[range](input/#range)<br>[tel](input/#tel)<br>[time](input/#time)<br>[url](input/#url)<br>[week](input/#week)<br>[reset](input/#reset)<br>[submit](input/#submit)<br>[text](input/#text)|定义可点击的按钮<br>定义复选框<br>定义拾色器<br>定义 date 控件（包括年、月、日，不包括时间）<br>定义 date 和 time 控件<br>定义 date 和 time 控件<br>定义用于 e-mail 地址的字段<br>定义文件选择字段和 "浏览..." 按钮，供文件上传<br>定义隐藏输入字段<br>定义图像作为提交按钮。<br>定义 month 和 year 控件<br>定义用于输入数字的字段<br>定义密码字段（字段中的字符会被遮蔽）<br>定义单选按钮<br>定义用于精确值不重要的输入数字的控件（比如 slider 控件）<br>定义重置按钮（重置所有的表单值为默认值）<br>定义用于输入搜索字符串的文本字段。<br>定义提交按钮。<br>定义用于输入电话号码的字段。<Br>默认。定义一个单行的文本字段（默认宽度为 20 个字符）。<Br>定义用于输入时间的控件（不带时区）。<Br>定义用于输入 URL 的字段。<Br>New	定义 week 和 year 控件（不带时区）。<br>|
 |[value](input/#value)|value|规定 `<input>` 元素的值|
-|[width](input/#width)|pixel<br>%|定义 input 字段的宽度。（适用于 type="image"）|
+|[width](input/#height和width)|pixel<br>%|定义 input 字段的宽度。（适用于 type="image"）|
 
 <br>
 
@@ -328,20 +328,20 @@ disabled 属性不适用于 `<input type="hidden">`
 <Br>
 <Br>
 
-###### height
+###### height和width
 
 **这个属性只使用在 `type="image" `**
 
 ```html
 <form>
   BoyName: <input type="text" name="text"  />
- <input type="image"  height="30" src="../img/chenqinchao.png" style="vertical-align:top"/>
+ <input type="image"  height="30" width="57" src="../img/chenqinchao.png" style="vertical-align:top"/>
 </form>
 ```
 
 <form >
   BoyName: <input type="text" name="text"  height="50" />
-  <input type="image"  height="30" src="../img/chenqinchao.png" style="vertical-align:top"/>
+  <input type="image"  height="30" width="57"  src="../img/chenqinchao.png" style="vertical-align:top"/>
 </form>
 
 <Br>
@@ -584,11 +584,88 @@ disabled 属性不适用于 `<input type="hidden">`
 <Br>
 <Br>
 
+
+###### type
+
+```html
+<form>
+  button: <input type="button">
+  checkbox: <input type="checkbox">
+  color: <input type="color">
+  date: <input type="date">
+  datetime: <input type="datetime">
+  datetime-local: <input type="datetime-local">
+  email: <input type="email">
+  file: <input type="file">
+  hidden: <input type="hidden">
+  image: <input type="image">
+  month: <input type="month">
+  number: <input type="number">
+  password: <input type="password">
+  radio: <input type="radio">
+  range: <input type="range">
+  reset: <input type="reset">
+  search: <input type="search">
+  submit: <input type="submit">
+  tel: <input type="tel">
+  text: <input type="text">
+  time: <input type="time">
+  url: <input type="url">
+  week: <input type="week">
+</form>
+```
+
+<form >
+  <span class="text-before">button: </span><input type="button" value="这是一个按钮"><Br>
+  <span class="text-before">checkbox: </span><input type="checkbox"><Br>
+  <span class="text-before">color: </span><input type="color"><Br>
+  <span class="text-before">date: </span><input type="date"><Br>
+  <span class="text-before">datetime: </span><input type="datetime"><Br>
+  <span class="text-before">datetime-local: </span><input type="datetime-local"><Br>
+  <span class="text-before">email: </span><input type="email"><Br>
+  <span class="text-before">file: </span><input type="file"><Br>
+  <span class="text-before">hidden:</span> <input type="hidden" value="你看不见"><Br>
+  <span class="text-before">image: </span><input height="30" type="image" src="../img/chenqinchao.png" style="vertical-align:top"><Br>
+  <span class="text-before">month: </span><input type="month"><Br>
+  <span class="text-before">number: </span><input type="number"><Br>
+  <span class="text-before">password: </span><input type="password"><Br>
+  <span class="text-before">radio: </span><input type="radio"><Br>
+  <span class="text-before">range: </span><input type="range"><Br>
+  <span class="text-before">reset: </span><input type="reset"><Br>
+  <span class="text-before">search: </span><input type="search"><Br>
+  <span class="text-before">submit: </span><input type="submit"><Br>
+  <span class="text-before">tel: </span><input type="tel"><Br>
+  <span class="text-before">text: </span><input type="text"><Br>
+  <span class="text-before">time: </span><input type="time"><Br>
+  <span class="text-before">url: </span><input type="url"><Br>
+  <span class="text-before">week: </span><input type="week">
+</form>
+
+<Br>
+<Br>
+
+###### value
+
+```html
+<form>
+  文字内容: <input type="text" step="5" name="number" value="hello world"  />
+</form>
+```
+
+<form >
+   文字内容: <input type="text" step="5" name="number" value="hello world"  />
+</form>
+
+<Br>
+<Br>
+
+
+
 #### 改变输入框的光标颜色
 
 - 通过 caret-color 属性：
 
-```copy
+```css
 input{
     caret-color:yellow
 }
@@ -599,7 +676,7 @@ input{
 
 - 通过 `:first-line` 伪元素：
 
-```copy
+```css
 input{
     color:black;
     &:first-line{
@@ -609,6 +686,12 @@ input{
 ```
 
 <style>
+
+.text-before{
+    display:inline-block;
+    width:100px;
+    margin-top:10px;
+}
 
 form input{
     background:none;
@@ -629,61 +712,5 @@ form input[type="submit"]{
 
 
 
-
- .slider1 {
-    -webkit-appearance: none;
-    max-width: 350px;
-    width: 100%;
-    height: 10px;
-    outline: none;
-  }
-  .slider1::-webkit-slider-thumb{
-      -webkit-appearance: none;/*清除默认样式*/
-      height:25px;/*设置滑块高度*/
-      width:25px;/*设置滑块宽度*/
-      background: #fff;/*设置背景色*/
-      border-radius:50%;/*加个圆角边*/
-      /* margin-top:-1vw; 使用position的话会导致滑块不滑动,但是绑定的value是改变的,所以这里使用margin-top去做定位*/
-      box-shadow: 0 1px 1px rgba(0,0,0,.5);
-      cursor: pointer;
-  }
-  .slider1::-webkit-slider-runnable-track{
-      border-radius: 30px;
-      background:#128;
-      height:25px;
-  }
- 
-  .slider2 {
-    -webkit-appearance: none;
-    max-width: 350px;
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: #1B2B33;
-    outline: none;
-    margin-top: 50px;
-    margin-bottom: 30px
-  }
- 
-  .slider2::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,.5);
-    border:1px solid #eee;
-    cursor: pointer;
-  }
- 
-  .slider2::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,.1);
-    cursor: pointer;
-  }
 
 </style>

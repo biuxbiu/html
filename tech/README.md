@@ -100,13 +100,78 @@ input{
 
 ###### 可滑动的数字空间
 
+>要改原生滑块的样式，最主要是记住两个属性<br>
+`::-webkit-slider-thumb`：滑块的样式<br>
+`::-webkit-slider-runnable-track`：滑块轨道的样式
+
 ```html
-<input class="rangeOne" type="range" min="1" max="100" step="2">
-<input class="rangeTwo" type="range" min="1" max="100" step="2">
+<input class="rangeOne" type="range" min="1" max="100" step="1">
+<input class="rangeTwo" type="range" min="1" max="100" step="1">
 
 <style>
 </style>
 ```
+
+<input class="rangeOne" type="range" value="0" min="1" max="100" step="1">
+<input class="rangeTwo" type="range" value="0" min="1" max="100" step="1">
+
+<style>
+.rangeOne {
+-webkit-appearance: none;
+max-width: 350px;
+width: 100%;
+height: 10px;
+outline: none;
+}
+.rangeOne::-webkit-slider-thumb{
+    -webkit-appearance: none;/*清除默认样式*/
+    height:25px;/*设置滑块高度*/
+    width:25px;/*设置滑块宽度*/
+    background: #fff;/*设置背景色*/
+    border-radius:50%;/*加个圆角边*/
+    /* margin-top:-1vw; 使用position的话会导致滑块不滑动,但是绑定的value是改变的,所以这里使用margin-top去做定位*/
+    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.rangeOne::-webkit-slider-runnable-track{
+    border-radius: 30px;
+    background:#128;
+    height:25px;
+}
+
+.rangeTwo {
+    -webkit-appearance: none;
+    max-width: 350px;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #1B2B33;
+    outline: none;
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+
+.rangeTwo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+    border:1px solid #eee;
+    cursor: pointer;
+}
+
+.rangeTwo::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+</style>
 
 <br>
 <br>
