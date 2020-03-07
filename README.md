@@ -1,25 +1,15 @@
-# Css
+# Html
 
-Cascading Style Sheets -- 层叠样式表。
+`html` 标签全览及黑科技探索。
 
-<<<<<<< HEAD
 
-<br>
-<br>
-
-**Link：**
-
-[css.biuxbiu.design]()
-
-=======
 <br>
 <br>
 
 **Article Link**
 
-[css.biuxbiu.design](http://css.biuxbiu.design/)
+[html.biuxbiu.design](http://html.biuxbiu.design/)
 
->>>>>>> 7b890bea87a0cf628a297f901097b1bc9379e90a
 <br>
 <br>
 
